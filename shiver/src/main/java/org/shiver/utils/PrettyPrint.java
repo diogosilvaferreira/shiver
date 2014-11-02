@@ -83,9 +83,10 @@ public class PrettyPrint
 										
 		}
 				
-		return TableRenderer.
-				renderTextTable(table) + 
-				OsUtils.LINE_SEPARATOR;
+		return OsUtils.LINE_SEPARATOR + 
+				TableRenderer.
+					renderTextTable(table); 
+				
 		
 	}
 	
