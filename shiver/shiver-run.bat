@@ -1,3 +1,3 @@
 @echo off
 cd target
-java -jar shiver-0.0.1-SNAPSHOT.jar
+java -jar shiver-1.0.0-RELEASE.jar

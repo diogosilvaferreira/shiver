@@ -76,13 +76,18 @@ public class Shark implements Runnable
 		}						
 		catch (Exception e)
 		{
+			e.printStackTrace(System.out);
 			result.setStatusCode("500 - Internal Server Error");
 		}
 		finally
 		{
+			String statusCode = response == null ? 
+					"500 - Internal Server Error" : 
+						response.getStatusLine().toString();
+			
 			result.setDate(new Date(System.currentTimeMillis()));			
 			result.setRequestType("GET");
-			result.setStatusCode(response.getStatusLine().toString());
+			result.setStatusCode(statusCode);
 			result.setTarget(target);
 			
 			swimEventSupport.firePropertyChange(

@@ -4,7 +4,7 @@
   <groupId>org</groupId>
   <artifactId>shiver</artifactId>
   <name>shiver</name>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>1.0.0-RELEASE</version>
   <url>http://maven.apache.org</url>
   <build>
     <plugins>
@@ -26,6 +26,13 @@
             </configuration>
           </execution>
         </executions>
+      </plugin>
+      <plugin>
+        <artifactId>maven-release-plugin</artifactId>
+        <version>2.5.1</version>
+        <configuration>
+          <tagNameFormat>v@{project.version}</tagNameFormat>
+        </configuration>
       </plugin>
     </plugins>
   </build>

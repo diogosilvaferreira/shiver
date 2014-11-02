@@ -12,7 +12,7 @@ import org.springframework.shell.core.CommandResult;
 public class SwimCommandTest extends AbstractCommandTest 
 {
 	private final String COMMAND      = "swim";
-	private final String TARGET_PARAM = "--target 'http://www.google.com'";
+	private final String TARGET_PARAM = "--target 'http://www.apache.org'";
 	private final String SHARKS_PARAM = "--sharks 10";
 	private final String MIXED_PARAM  = "--mixed false";
 	
